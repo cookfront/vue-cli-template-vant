@@ -9,7 +9,7 @@
       <a :href="item.type | getOrderLink">
         <p class="orders-preview__icon-container">
           <van-icon :name="item.icon" class="orders-preview__icon"></van-icon>
-          <span v-if="item.num > 0" class="orders-preview__count">{{ item.num }}</span>
+          <span v-if="item.num > 0" class="orders-preview__count" v-text="item.num"></span>
         </p>
         <p class="orders-preview__title">
           {{ item.title }}
